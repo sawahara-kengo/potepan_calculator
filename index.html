@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>電卓</title>
+  </head>
+
+  <body>
+    <h3>電卓</h3>
+
+    <!-- ここに記述していきましょう！ -->
+
+    <form name="calculator">
+        <table>
+            <!--計算エリア-->
+            <tr>
+                <td colspan="4"><input type="text" id="display" value="0" disabled></td>
+            </tr>
+
+            <!--AC,+/-,%,÷,-->
+            <tr>
+                <td colspan="3"><input type="button" value="AC" class="button topButton AC" onclick="clickButton(this)"></td>
+                <td><input type="button" value="/" class="button rightButton" name="division" onclick="clickButton(this)"></td>
+            </tr>
+
+            <!--7,8,9,×,-->
+            <tr>
+                <td><input type="button" value="7" class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="8" class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="9" class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="*" class="button rightButton" name="multiplication" onclick="clickButton(this)"></td>
+            </tr>
+
+            <!--4,5,6,-,-->
+            <tr>
+                <td><input type="button" value="4" class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="5" class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="6" class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="+" class="button rightButton" onclick="clickButton(this)"></td>
+            </tr>
+
+            <!--1,2,3,+,-->
+            <tr>
+                <td><input type="button" value="1" class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="2" class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="3" class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="-" class="button rightButton" onclick="clickButton(this)"></td>
+            </tr>
+
+            <!--0,.,=,-->
+            <tr>
+                <td colspan="2"><input type="button" value="0" class="button zero" onclick="clickButton(this)"></td>
+                <td><input type="button" value="." class="button" onclick="clickButton(this)"></td>
+                <td><input type="button" value="=" class="button rightButton" onclick="clickButton(this)"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
